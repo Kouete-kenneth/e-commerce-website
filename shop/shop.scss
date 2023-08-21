@@ -123,12 +123,14 @@ main {
   }
 
   .products {
+
     width: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     padding: 10px;
+   
       .product {
         text-align: center;
         box-sizing: border-box;
@@ -142,13 +144,13 @@ main {
         overflow: hidden;
         border: 1px solid $secondary-color;
         padding: 0.2rem;
-       
         img {
           width: 90%;
           height: 220px;
           margin-bottom: 1rem;
           object-fit: cover;
           border-radius: 5px;
+          resize: both;
         }
 
         .product-info {
@@ -170,7 +172,7 @@ main {
             color: $white;
             font-size: 1rem;
             cursor: pointer;
-
+            border-radius: 40%;
             &:hover {
               background-color: darken($primary-color, 10%);
             }
@@ -183,11 +185,15 @@ main {
 
 .cart {
   position: fixed;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   right: -350px;
   width: 350px;
   height: 100%;
   padding: 1rem;
+  padding-top: 5em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: right 0.6s ease-in-out;
   background-color: $secondary-color;
@@ -238,7 +244,7 @@ main {
 
         .remove-item-btn {
           display: block;
-          width: 50%;
+        
           margin-top: 0.5rem;
           padding: 0.25rem 0.5rem;
           border: none;
@@ -282,7 +288,9 @@ main {
       border: none;
       background-color: $primary-color;
       color: $white;
-      font-size: 1rem;
+      font-size: 1.5em;
+      border-radius: 10px;
+      width: 80%;
       cursor: pointer;
       &:hover {
         background-color: darken($primary-color, 10%);

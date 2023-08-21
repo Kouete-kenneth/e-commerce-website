@@ -48,6 +48,54 @@
             "details":""
         },
         {
+            "id": 17,
+            "name": "Product 17",
+            "category": "watches",
+            "price": 10.99,
+            "image": "../images/product-image1.jpg",
+            "details":""
+        },
+        {
+            "id": 18,
+            "name": "Product 18",
+            "category": "watches",
+            "price": 10.99,
+            "image": "../images/product-image1.jpg",
+            "details":""
+        },
+        {
+            "id": 19,
+            "name": "Product 19",
+            "category": "watches",
+            "price": 10.99,
+            "image": "../images/product-image1.jpg",
+            "details":""
+        },
+        {
+            "id": 110,
+            "name": "Product 110",
+            "category": "watches",
+            "price": 10.99,
+            "image": "../images/product-image1.jpg",
+            "details":""
+        },
+        {
+            "id": 111,
+            "name": "Product 111",
+            "category": "watches",
+            "price": 10.99,
+            "image": "../images/product-image1.jpg",
+            "details":""
+        },
+        {
+            "id": 112,
+            "name": "Product 112",
+            "category": "watches",
+            "price": 10.99,
+            "image": "../images/product-image1.jpg",
+            "details":""
+        },
+        {
           "id": 21,
           "name": "Product 21",
           "category": "shoes",
@@ -90,6 +138,54 @@
         {
             "id": 26,
             "name": "Product 26",
+            "category": "shoes",
+            "price": 20.99,
+            "image": "../images/product-image2.jpg",
+            "details":""
+        },
+        {
+            "id": 27,
+            "name": "Product 27",
+            "category": "shoes",
+            "price": 20.99,
+            "image": "../images/product-image2.jpg",
+            "details":""
+        },
+        {
+            "id": 28,
+            "name": "Product 28",
+            "category": "shoes",
+            "price": 20.99,
+            "image": "../images/product-image2.jpg",
+            "details":""
+        },
+        {
+            "id": 29,
+            "name": "Product 29",
+            "category": "shoes",
+            "price": 20.99,
+            "image": "../images/product-image2.jpg",
+            "details":""
+        },
+        {
+            "id": 210,
+            "name": "Product 210",
+            "category": "shoes",
+            "price": 20.99,
+            "image": "../images/product-image2.jpg",
+            "details":""
+        },
+        {
+            "id": 211,
+            "name": "Product 211",
+            "category": "shoes",
+            "price": 20.99,
+            "image": "../images/product-image2.jpg",
+            "details":""
+        },
+        {
+            "id": 212,
+            "name": "Product 212",
             "category": "shoes",
             "price": 20.99,
             "image": "../images/product-image2.jpg",
@@ -144,6 +240,54 @@
             "details":""
         },
         {
+            "id": 37,
+            "name": "Product 37",
+            "category": "hand-bags",
+            "price": 30.99,
+            "image": "../images/product-image11.jpg",
+            "details":""
+        },
+        {
+            "id": 38,
+            "name": "Product 38",
+            "category": "hand-bags",
+            "price": 30.99,
+            "image": "../images/product-image11.jpg",
+            "details":""
+        },
+        {
+            "id": 39,
+            "name": "Product 39",
+            "category": "hand-bags",
+            "price": 30.99,
+            "image": "../images/product-image11.jpg",
+            "details":""
+        },
+        {
+            "id": 310,
+            "name": "Product 310",
+            "category": "hand-bags",
+            "price": 30.99,
+            "image": "../images/product-image11.jpg",
+            "details":""
+        },
+        {
+            "id": 311,
+            "name": "Product 311",
+            "category": "hand-bags",
+            "price": 30.99,
+            "image": "../images/product-image11.jpg",
+            "details":""
+        },
+        {
+            "id": 312,
+            "name": "Product 312",
+            "category": "hand-bags",
+            "price": 30.99,
+            "image": "../images/product-image11.jpg",
+            "details":""
+        },
+        {
           "id": 41,
           "name": "Product 41",
           "category": "freezers",
@@ -192,6 +336,54 @@
             "details":""
         },
         {
+            "id": 47,
+            "name": "Product 47",
+            "category": "freezers",
+            "price": 40.99,
+            "image": "../images/product-image10.jpg",
+            "details":""
+        },
+        {
+            "id": 48,
+            "name": "Product 48",
+            "category": "freezers",
+            "price": 40.99,
+            "image": "../images/product-image10.jpg",
+            "details":""
+        },
+        {
+            "id": 49,
+            "name": "Product 49",
+            "category": "freezers",
+            "price": 40.99,
+            "image": "../images/product-image10.jpg",
+            "details":""
+        },
+        {
+            "id": 410,
+            "name": "Product 410",
+            "category": "freezers",
+            "price": 40.99,
+            "image": "../images/product-image10.jpg",
+            "details":""
+        },
+        {
+            "id": 411,
+            "name": "Product 411",
+            "category": "freezers",
+            "price": 40.99,
+            "image": "../images/product-image10.jpg",
+            "details":""
+        },
+        {
+            "id": 412,
+            "name": "Product 412",
+            "category": "freezers",
+            "price": 40.99,
+            "image": "../images/product-image10.jpg",
+            "details":""
+        },
+        {
           "id": 51,
           "name": "Product 51",
           "category": "earphones",
@@ -234,6 +426,54 @@
         {
             "id": 56,
             "name": "Product 56",
+            "category": "earphones",
+            "price": 50.99,
+            "image": "../images/product-image4.jpg",
+            "details":""
+        },
+        {
+            "id": 57,
+            "name": "Product 57",
+            "category": "earphones",
+            "price": 50.99,
+            "image": "../images/product-image4.jpg",
+            "details":""
+        },
+        {
+            "id": 58,
+            "name": "Product 58",
+            "category": "earphones",
+            "price": 50.99,
+            "image": "../images/product-image4.jpg",
+            "details":""
+        },
+        {
+            "id": 59,
+            "name": "Product 59",
+            "category": "earphones",
+            "price": 50.99,
+            "image": "../images/product-image4.jpg",
+            "details":""
+        },
+        {
+            "id": 510,
+            "name": "Product 510",
+            "category": "earphones",
+            "price": 50.99,
+            "image": "../images/product-image4.jpg",
+            "details":""
+        },
+        {
+            "id": 511,
+            "name": "Product 511",
+            "category": "earphones",
+            "price": 50.99,
+            "image": "../images/product-image4.jpg",
+            "details":""
+        },
+        {
+            "id": 512,
+            "name": "Product 512",
             "category": "earphones",
             "price": 50.99,
             "image": "../images/product-image4.jpg",
@@ -435,7 +675,7 @@
           "id": 81,
           "name": "Product 81",
           "category": "electronics",
-          "price": 80.99,
+          "price": 1230.76,
           "image": "../images/product-image5.jpg",
           "details":""
         },
@@ -443,88 +683,88 @@
             "id": 82,
             "name": "Product 82",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 159.99,
+            "image": "../images/product-image13.jpg",
             "details":""
         },
         {
             "id": 83,
             "name": "Product 83",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 100.54,
+            "image": "../images/product-image14.jpg",
             "details":""
         },
         {
             "id": 84,
             "name": "Product 84",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 30.99,
+            "image": "../images/product-image15.jpg",
             "details":""
         },
         {
             "id": 85,
             "name": "Product 85",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 25.44,
+            "image": "../images/product-image16.jpg",
             "details":""
         },
         {
             "id": 86,
             "name": "Product 86",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 100.44,
+            "image": "../images/product-image17.jpg",
             "details":""
         },
         {
             "id": 87,
             "name": "Product 87",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 119.99,
+            "image": "../images/product-image18.jpg",
             "details":""
         },
         {
             "id": 88,
             "name": "Product 88",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 60.55,
+            "image": "../images/product-image19.jpg",
             "details":""
         },
         {
             "id": 89,
             "name": "Product 89",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 150.5,
+            "image": "../images/product-image20.jpg",
             "details":""
         },
         {
             "id": 810,
             "name": "Product 810",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 3.50,
+            "image": "../images/product-image21.jpg",
             "details":""
         },
         {
             "id": 811,
             "name": "Product 811",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 20.4,
+            "image": "../images/product-image22.jpg",
             "details":""
         },
         {
             "id": 812,
             "name": "Product 812",
             "category": "electronics",
-            "price": 80.99,
-            "image": "../images/product-image5.jpg",
+            "price": 200.99,
+            "image": "../images/product-image23.jpg",
             "details":""
         },
         {
@@ -717,6 +957,102 @@
             "category": "security-cameras",
             "price": 100.99,
             "image": "../images/product-image3.jpg",
+            "details":""
+        },
+        {
+            "id": 111,
+            "name": "Product 111",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 112,
+            "name": "Product 112",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 113,
+            "name": "Product 113",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 114,
+            "name": "Product 114",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 115,
+            "name": "Product 115",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 116,
+            "name": "Product 116",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 117,
+            "name": "Product 117",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 118,
+            "name": "Product 118",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 119,
+            "name": "Product 119",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 1110,
+            "name": "Product 1110",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 1111,
+            "name": "Product 1111",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
+            "details":""
+        },
+        {
+            "id": 1112,
+            "name": "Product 1112",
+            "category": "dressing",
+            "price": 40.99,
+            "image": "../images/product-image8.jpg",
             "details":""
         }
       ]

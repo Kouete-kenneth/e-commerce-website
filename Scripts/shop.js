@@ -502,7 +502,7 @@ cartItems.forEach((item) => {
     total += item.price * item.quantity;
   });
   
-  cartTotal.innerText = total.toFixed(2);
+  cartTotal.innerText = 'Total: '+'$'+total.toFixed(2);
   
   // Add event listener to remove item button
   const removeItemBtns = document.querySelectorAll('.remove-item-btn');
