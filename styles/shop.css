@@ -15,11 +15,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   justify-content: space-between;
   font-family: Arial, sans-serif;
   color: white;
   background-color: #141204;
-  width: 100vw;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -42,9 +42,15 @@ header {
   color: white;
   position: fixed;
 }
-header h1 {
-  font-size: 2rem;
+header span #shooping-heading {
+  font-weight: 900;
+  font-size: 2em;
   color: #E8985E;
+  opacity: 1;
+}
+header span span {
+  font-size: 0.7em;
+  opacity: 0.5;
 }
 header .view-cart-btn {
   border: none;
@@ -65,8 +71,8 @@ main {
   align-items: center;
   flex-wrap: wrap;
   margin: 1rem;
-  margin-top: 5rem;
-  width: 95%;
+  margin-top: 6rem;
+  width: 98%;
   min-width: 220px;
 }
 main .categories {
@@ -108,21 +114,21 @@ main .categories .categoryitem .category-btn.active, main .categories .categoryi
   color: white;
 }
 main .products {
+  margin: 0px;
   width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  padding: 10px;
+  padding: 0px;
 }
 main .products .product {
   text-align: center;
   box-sizing: border-box;
   flex: 1 1 auto;
-  width: calc((100% - 50px) / 4);
-  margin: 20px;
+  width: calc((100% - 50px) / 3);
   min-width: 210px;
-  max-width: 350px;
+  max-width: 400px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   overflow: hidden;
@@ -167,10 +173,10 @@ main .products .product .product-info .add-to-cart-btn:hover {
   align-items: center;
   justify-content: space-between;
   right: -350px;
-  width: 350px;
+  width: 30%;
   height: 100%;
   padding: 1rem;
-  padding-top: 5em;
+  padding-top: 6.5em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: right 0.6s ease-in-out;
   background-color: #262A10;

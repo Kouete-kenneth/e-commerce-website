@@ -24,11 +24,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   justify-content: space-between;
   font-family: Arial, sans-serif;
   color: $white;
   background-color: $main;
-  width: 100vw;
   &::-webkit-scrollbar{
     display: none;
   }
@@ -50,10 +50,18 @@ header {
   box-shadow: 0 0 70px $primary-color;
   color: $white;
   position: fixed;
-
-  h1 {
-    font-size: 2rem;
-    color: $heading-primary;
+  
+  span{
+    #shooping-heading {
+      font-weight: 900;
+      font-size: 2em;
+      color: $heading-primary;
+      opacity: 1;
+    }
+    span{
+      font-size: 0.7em;
+      opacity: 0.5;
+    }
   }
 
   .view-cart-btn {
@@ -77,8 +85,8 @@ main {
   align-items: center;
   flex-wrap: wrap;
   margin: 1rem;
-  margin-top: 5rem;
-  width: 95%;
+  margin-top: 6rem;
+  width: 98%;
   min-width: 220px;
   .categories {
     width: 95%;
@@ -123,22 +131,20 @@ main {
   }
 
   .products {
-
+    margin: 0px;
     width: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    padding: 10px;
-   
+    padding: 0px;
       .product {
         text-align: center;
         box-sizing: border-box;
         flex: 1 1 auto;
-        width: calc(((100% - 50px) / 4));
-        margin: 20px;
+        width: calc(((100% - 50px) / 3));
         min-width: 210px;
-        max-width: 350px;
+        max-width: 400px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         overflow: hidden;
@@ -190,10 +196,10 @@ main {
   align-items: center;
   justify-content: space-between;
   right: -350px;
-  width: 350px;
+  width: 30%;
   height: 100%;
   padding: 1rem;
-  padding-top: 5em;
+  padding-top: 6.5em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: right 0.6s ease-in-out;
   background-color: $secondary-color;

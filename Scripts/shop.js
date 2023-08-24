@@ -388,6 +388,8 @@ const productsContainer = document.querySelector('.products');
   const cartList = document.querySelector('.cart-list');
   const cartTotal = document.querySelector('.cart-total');
   const checkoutBtn = document.querySelector('.checkout-btn');
+  const main = document.querySelector('.main-section');
+  const body=document.querySelector('body');
   let cartItems = [];
 
   // Load products on page load
@@ -536,8 +538,12 @@ let isCartOpen= false;
 function adjustCartBTN_content(){
    if (!isCartOpen) {
       openCartBtn.innerHTML=`<i class="fas fa-times"></i>`
+      main.style.width='70%'
+      body.style.alignItems='start'
    } else {
     openCartBtn.innerHTML=`<i class="fas fa-shopping-cart"></i>`
+      main.style.width='100%'
+      body.style.alignItems='center'
    }
    isCartOpen=!isCartOpen;
 }
