@@ -390,6 +390,8 @@ const productsContainer = document.querySelector('.products');
   const checkoutBtn = document.querySelector('.checkout-btn');
   const main = document.querySelector('.main-section');
   const body=document.querySelector('body');
+  const headingCapture=document.querySelector('#shopping-capture');
+  const shopingHeading=document.querySelector('#shooping-heading');
   let cartItems = [];
 
   // Load products on page load
@@ -528,18 +530,46 @@ localStorage.setItem('cart', JSON.stringify(cartItems));
 
 // Load cart from local storage
 function loadCart() {
-const cartData = localStorage.getItem('cart');
-if (cartData) {
-cartItems = JSON.parse(cartData);
-updateCart();
+    const cartData = localStorage.getItem('cart');
+    if (cartData) {
+      cartItems = JSON.parse(cartData);
+      updateCart();
+    }
 }
+const mediaQuery = window.matchMedia('(max-width: 768px)'); 
+
+// Function to handle changes in the media query status
+function handleMediaQueryChange(mediaQuery) {
+  if (mediaQuery.matches) {
+    // Media query matches (screen width is <= 768px)
+    main.style.width='100%'
+    cart.style.width='100%'
+    cart.style.paddingTop='5rem';
+    cart.style.paddingBottom='3rem';
+    headingCapture.style.display='none'
+    shopingHeading.style.fontSize='1rem';
+    console.log('Media query matched!');
+  }else{
+    console.log('Media query does not matched!');
+  }
 }
+
+// Initial check and setup
+handleMediaQueryChange(mediaQuery);
+
+// Add a listener to handle changes in the media query
+mediaQuery.addListener(handleMediaQueryChange);
 let isCartOpen= false;
 function adjustCartBTN_content(){
    if (!isCartOpen) {
       openCartBtn.innerHTML=`<i class="fas fa-times"></i>`
-      main.style.width='70%'
+      main.style.width='50%'
       body.style.alignItems='start'
+      // Initial check and setup
+      handleMediaQueryChange(mediaQuery);
+
+      // Add a listener to handle changes in the media query
+      mediaQuery.addListener(handleMediaQueryChange);
    } else {
     openCartBtn.innerHTML=`<i class="fas fa-shopping-cart"></i>`
       main.style.width='100%'

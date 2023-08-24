@@ -42,14 +42,16 @@ header {
   color: white;
   position: fixed;
 }
+header span {
+  padding: 0px 10px;
+}
 header span #shooping-heading {
   font-weight: 900;
-  font-size: 2em;
+  font-size: 1.5rem;
   color: #E8985E;
-  opacity: 1;
 }
-header span span {
-  font-size: 0.7em;
+header span #shopping-capture {
+  font-size: 0.4rem;
   opacity: 0.5;
 }
 header .view-cart-btn {
@@ -172,12 +174,12 @@ main .products .product .product-info .add-to-cart-btn:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  right: -350px;
-  width: 30%;
+  right: -100%;
+  width: 50%;
   height: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   padding-top: 6.5em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: right 0.6s ease-in-out;
   background-color: #262A10;
   overflow-y: scroll;
@@ -195,6 +197,7 @@ main .products .product .product-info .add-to-cart-btn:hover {
 .cart .cart-list {
   list-style: none;
   margin-bottom: 1rem;
+  width: 90%;
 }
 .cart .cart-list li {
   display: flex;
