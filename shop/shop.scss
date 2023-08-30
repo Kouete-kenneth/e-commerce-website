@@ -59,7 +59,7 @@ header {
       color: $heading-primary;
     }
     #shopping-capture{
-      font-size: 0.4rem;
+      font-size: 0.7rem;
       opacity: 0.5;
     }
   }
@@ -87,7 +87,7 @@ main {
   margin: 1rem;
   margin-top: 6rem;
   width: 98%;
-  min-width: 220px;
+  min-width: 220px;position: relative;
   .categories {
     width: 95%;
     min-width: 220px;
@@ -171,8 +171,8 @@ main {
           }
 
           .add-to-cart-btn {
-            
-            padding: 0.5rem 1rem;
+            z-index: 6;
+            padding: 1rem 2rem;
             border: none;
             background-color: inherit;
             color: $white;
@@ -182,11 +182,15 @@ main {
             &:hover {
               background-color: darken($primary-color, 10%);
             }
+            i{
+              z-index: 1;
+            }
           }
         }
       }
     
   }
+  
 }
 
 .cart {
@@ -283,7 +287,7 @@ main {
     }
   }
      &.open {
-      right: 0;
+      right: 0px;
      }
     }
     .checkout-btn {
@@ -315,4 +319,88 @@ footer {
     font-size: 1rem;
     text-align: center;
   }
+}
+.details{
+  box-sizing: border-box;
+  position: fixed;
+  margin-top: 14vh;
+  width: 70vw;
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 4;
+  padding: 1em 2em;
+  padding-top: 0.4em;
+  overflow: hidden;
+  background-color: $white;
+  color: $main;
+  display: none;
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display:none;
+  }
+  @media screen and (max-width:383px) {
+    width: 80vw;
+    font-size: 0.8em;
+    padding: 1em 1em;
+    margin-top: 7vh;
+  }
+  .details-head{
+    display: block;
+    position: fixed;
+    width: 63%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 1.3em;
+    background-color: $primary-color;
+    color: $heading-secondary;
+    font-size: 0.6em;
+    margin-top: 0px;
+    @media screen and (max-width:750px) {
+      width: 60%;
+    }
+    @media screen and (max-width:550px) {
+      width: 57%;
+    }
+    @media screen and (max-width:471px) {
+      width: 55%;
+    }
+    @media screen and (max-width:383px) {
+      width: 70%;
+      font-size: 0.6em;
+      padding: 1em 1em;
+    }
+    @media screen and (max-width:275px) {
+      width: 65%;
+      font-size: 0.6em;
+      padding: 1em 0.7em;
+    }
+    .details-btn{
+      background-color: inherit;
+      border: none;
+      width: 2em;
+      height: auto;
+      border-radius: 20px;
+      font-size: 22px;
+      color: $heading-primary;
+      &:hover{
+        background-color: $main;
+      }
+    }
+  }
+  .details-container{
+    margin-top: 3em;
+    @media screen and (max-width:383px) {
+      margin-top: 4em;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      border: 3px double $secondary-color;
+      border-radius: 1em;
+    }
+  }
+
 }

@@ -392,8 +392,10 @@ const productsContainer = document.querySelector('.products');
   const body=document.querySelector('body');
   const headingCapture=document.querySelector('#shopping-capture');
   const shopingHeading=document.querySelector('#shooping-heading');
+  const productdetails=document.querySelector('.details-container');
+  const detailButton=document.querySelector('.details-btn');
   let cartItems = [];
-
+  
   // Load products on page load
   window.addEventListener('load', () => {
     loadProducts('all');
@@ -407,6 +409,7 @@ const productsContainer = document.querySelector('.products');
     });
   });
   // Load products data and display in products container
+let isDetailsOpen= false;
  async function loadProducts(category) {
     const productsData =await loadProductsData();
     console.log(productsData);
@@ -423,7 +426,7 @@ const productsContainer = document.querySelector('.products');
     filteredProducts.forEach((product) => {
       const productEl = document.createElement('div');
       productEl.classList.add('product');
-      productEl.innerHTML = `<img src="${product.image}" alt="${product.name}">         
+      productEl.innerHTML = `<img data-id="${product.id}" title='Click on the Image to view details' class="DetailImage" src="${product.image}" alt="${product.name}">         
       <div class="product-info">           
       <h3 class="product-name">${product.name}</h3>          
        <p class="product-price">$${product.price.toFixed(2)}</p>           
@@ -437,6 +440,19 @@ const productsContainer = document.querySelector('.products');
       addToCartBtns.forEach((btn) => {
         btn.addEventListener('click', addToCart);
       });
+      const shopProducts=document.querySelectorAll('.DetailImage');
+      console.log(shopProducts);
+      shopProducts.forEach((products) => {
+        products.addEventListener('click', (e) => {
+          const productID = parseInt(e.target.dataset.id);
+          console.log('The product ID is: '+ productID)
+          ProductDetails(productID);
+          isDetailsOpen=true;
+        });
+        //  products.style.backgroundColor='red';
+         
+      });
+
    }
 }
 async function loadAllProducts() {
@@ -446,11 +462,12 @@ async function loadAllProducts() {
     productsData.forEach((product) => {
       const productEl = document.createElement('div');
       productEl.classList.add('product');
-      productEl.innerHTML = `<img src="${product.image}" alt="${product.name}">         
+      productEl.setAttribute('data-id',product.id);
+      productEl.innerHTML = `<img title='Click on the Image to view details' data-id="${product.id}" class="DetailImage" src="${product.image}" alt="${product.name}">         
       <div class="product-info">
       <p class="product-price">$${product.price.toFixed(2)}</p>            
       <h3 class="product-name">${product.name}</h3>                    
-       <button class="add-to-cart-btn" data-id="${product.id}"><i class="fas fa-cart-plus"></i></button>        
+       <button title='click to add the Item the cart' class="add-to-cart-btn" data-id="${product.id}"><i class="fas fa-cart-plus"></i></button>        
         </div>`;
 
       productsContainer.appendChild(productEl);
@@ -460,8 +477,58 @@ async function loadAllProducts() {
       addToCartBtns.forEach((btn) => {
         btn.addEventListener('click', addToCart);
       });
+      const shopProducts=document.querySelectorAll('.DetailImage');
+      shopProducts.forEach((products) => {
+        products.addEventListener('click', (e) => {
+          const productID = parseInt(e.target.dataset.id);
+          console.log('The product ID is: '+ productID)
+          ProductDetails(productID);
+          isDetailsOpen=true;
+          console.log('isopen: '+isDetailsOpen)
+        });
+        console.log('isopen: '+isDetailsOpen)
+      });
 }
-// Add product to cart
+//handle product details
+async function ProductDetails(productId){
+  const productsData =await loadProductsData();
+  const product = productsData.find((product) => product.id === productId);
+  console.log('This product: '+ productsData);
+  productdetails.innerHTML='';
+  const productEl = document.createElement('div');
+      productEl.classList.add('productDet');
+      productEl.innerHTML = `<img src="${product.image}" alt="${product.name}">         
+      <div class="product-info">
+          <h3 class="product-name">Name: ${product.name}</h3>
+          <p class="product-price"><strong>Price:</strong> $${product.price.toFixed(2)}</p>                                
+          <p class="product-details"><strong>product Description:</strong>${product.details}</p>        
+      </div>`;
+      const productDetMain=document.querySelector('.details');
+      productDetMain.style.display='flex';
+      productDetMain.style.flexDirection='column'
+      productdetails.appendChild(productEl);
+}
+
+
+function closeDetail(){
+  
+   if (isDetailsOpen) {
+    const productDetMain=document.querySelector('.details');
+    productDetMain.style.display='none';
+
+   } else {
+    console.log('Detail pannel is closed');
+   }
+   isCartOpen=false;
+}
+// Hide the detail panel
+detailButton.addEventListener('click' , () => {
+  closeDetail();
+})
+// Show or hide cart
+
+
+//Add product to cart
 async function addToCart(e) {
 const productsData =await loadProductsData();
 const productId = parseInt(e.target.dataset.id);
@@ -506,26 +573,26 @@ cartItems.forEach((item) => {
     total += item.price * item.quantity;
   });
   
-  cartTotal.innerText = 'Total: '+'$'+total.toFixed(2);
-  
-  // Add event listener to remove item button
-  const removeItemBtns = document.querySelectorAll('.remove-item-btn');
-  removeItemBtns.forEach((btn) => {
-    btn.addEventListener('click', removeFromCart);
-  });
+    cartTotal.innerText = 'Total: '+'$'+total.toFixed(2);
+    
+    // Add event listener to remove item button
+    const removeItemBtns = document.querySelectorAll('.remove-item-btn');
+    removeItemBtns.forEach((btn) => {
+      btn.addEventListener('click', removeFromCart);
+    });
 }
 
 // Remove product from cart
 function removeFromCart(e) {
-const productId = parseInt(e.target.dataset.id);
-cartItems = cartItems.filter((item) => item.id !== productId);
-updateCart();
-saveCart();
+    const productId = parseInt(e.target.dataset.id);
+    cartItems = cartItems.filter((item) => item.id !== productId);
+    updateCart();
+    saveCart();
 }
 
 // Save cart to local storage
 function saveCart() {
-localStorage.setItem('cart', JSON.stringify(cartItems));
+  localStorage.setItem('cart', JSON.stringify(cartItems));
 }
 
 // Load cart from local storage
@@ -590,6 +657,6 @@ cartItems = [];
 updateCart();
 saveCart();
 });
-
 // Load cart from local storage on page load
 window.addEventListener('load', loadCart);
+
